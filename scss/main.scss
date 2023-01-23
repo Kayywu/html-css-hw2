@@ -1,3 +1,75 @@
+/* HEADER */
+ @import "./utils/vars";
+
+body {
+    font-family: 'Roboto';
+}
+
 .header {
-background-color: white;
+    background-color: $white-color;
+ 
+    &__logo{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: $white-color;
+
+        &--black {
+            @extend .header__logo;
+            color: $black-color;
+        }
+    }
+}
+
+.navigation{
+
+&__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $main-color;
+}
+}
+
+.adress__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $descriptions-color;
+}
+
+/* SLIDER */
+
+.slider__heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color ;
+}
+
+.slider__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white-color;
 }
