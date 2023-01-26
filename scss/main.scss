@@ -1,21 +1,45 @@
 /* HEADER */
  @import "./utils/vars";
 
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+
 body {
     font-family: 'Roboto';
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .header {
     background-color: $white-color;
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        &--left {
+            display: flex;
+            align-items: center;
+            gap: 54px;
+        }
+    }
  
-    &__logo{
+    &__logo {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
-        color: $white-color;
+        color: $accent-color;
+        text-decoration: none;
 
         &--black {
             @extend .header__logo;
@@ -24,27 +48,48 @@ body {
     }
 }
 
-.navigation{
 
-&__link {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: $main-color;
-}
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        list-style: none;
+        gap: 46px;
+    }   
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $main-color;
+        text-decoration: none;
+    }
 }
 
-.adress__link {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: $descriptions-color;
+.address {
+    display: flex;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: $descriptions-color;
+        text-decoration: none;
+    }
 }
 
 /* SLIDER */

@@ -9,7 +9,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       />
-        <link rel="stylesheet" href="./dist/css/main.min.css" />
+        <link rel="stylesheet" href="./css/min/main.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -18,22 +18,26 @@
     <body>
         <header class="header">
             <div class="header__container">
+                <div class="header__container--left">
                     <a class="header__logo" href="index.html">Web<span class="header__logo--black">Studio</span></a>
-                <nav>
-                <ul class="navigation">
-                    <li><a class="navigation__link" href="index.html">Agencja</a></li>
-                    <li><a class="navigation__link" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="navigation__link" href="/Kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-            <div class="adress">
-                <a class="adress__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="adress__link" href="tel:+48111111111">+ 48 111 111 111</a>
-            </div>
+                    <nav class="navigation">
+                        <ul class="navigation__container">
+                            <li><a class="navigation__link" href="index.html">Agencja</a></li>
+                            <li><a class="navigation__link" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="navigation__link" href="/Kontakt">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="address">
+                    <div class="address__container">
+                        <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="address__link" href="tel:+48111111111">+ 48 111 111 111</a>
+                    </div>
+                </div>
             </div>
         </header>
            
-<main>
+    <main>
     <section class="slider">
         <div class="slider__container">
          <h1 class="slider__heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
