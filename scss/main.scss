@@ -94,6 +94,12 @@ body {
 
 /* SLIDER */
 
+
+.slider__container {
+    background-color: $background-dark-color;
+    padding: 200px 0;
+}
+
 .slider__heading {
     font-family: 'Roboto';
     font-style: normal;
@@ -103,7 +109,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $white-color ;
+    color: $white-color;
 }
 
 .slider__button {
@@ -112,9 +118,12 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
+    justify-content: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: $white-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 42px;
 }
