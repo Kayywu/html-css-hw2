@@ -137,3 +137,47 @@ body {
     border-radius: 4px;
     padding: 10px 42px;
 }
+
+
+/* article */
+
+.article {
+
+    &__container {
+     display: flex;
+     padding: 94px 214px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__item {
+       list-style: none;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $descriptions-color;
+        margin-top: 10px;
+    }
+}
