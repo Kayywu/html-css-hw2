@@ -125,17 +125,22 @@ body {
 
 /* article */
 .article__container {
-  display: flex;
-  padding: 94px 214px;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
 }
 .article__list {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   gap: 30px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .article__item {
   list-style: none;
+  max-width: 270px;
+  width: 100%;
 }
 .article__title {
   font-family: "Roboto";
