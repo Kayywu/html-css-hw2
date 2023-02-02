@@ -161,4 +161,28 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;
+}
+
+/* projects */
+.projects__container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.projects__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0;
+}
+.projects__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding-top: 50px;
 }/*# sourceMappingURL=main.css.map */

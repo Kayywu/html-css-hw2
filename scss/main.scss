@@ -186,3 +186,31 @@ body {
         margin-top: 10px;
     }
 }
+
+/* projects */
+
+.projects {
+
+    &__container {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        margin: 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 30px;
+        padding-top: 50px;
+    }
+}
