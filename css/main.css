@@ -128,13 +128,13 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 94px;
 }
 .article__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  margin-top: 94px;
   padding: 0px;
 }
 .article__item {
@@ -187,7 +187,8 @@ body {
   justify-content: center;
   list-style: none;
   gap: 30px;
-  padding-top: 50px;
+  padding: 0px;
+  margin-top: 50px;
 }
 
 /* team */
