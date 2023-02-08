@@ -222,9 +222,8 @@ body {
 /* team */
 
 .team {
-
+    background-color: $background-light-color;
     &__container {
-        background-color: $background-light-color;
         padding-top: 94px;
         padding-bottom: 94px;
         max-width: 1200px;
@@ -254,6 +253,10 @@ body {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
+    &__photo {
+        max-width: 260px;
+        max-height: 368px;
+    }
     &__name {
         font-family: 'Roboto';
         font-style: normal;
@@ -274,4 +277,80 @@ body {
         letter-spacing: 0.03em;
         color: $descriptions-color;
         }
+}
+
+.footer {
+    background-color: $background-dark-color;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 215px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: $accent-color;
+        text-decoration: none;
+        &--white {
+            color: $white-color;
+        }
+    }
+
+    &__adress {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+
+    &__place {
+        color: $white-color;
+    }
+
+    &__email,
+    &__tel {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 9px;
+    }
+}
+
+/* PORTFOLIO */
+
+.buttons {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 94px;
+
+    }
+    &__quote {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $black-color;
+        background: $background-light-color;
+        border-radius: 4px;
+        border-style: none;
+        padding: 6px 22px;
+        margin-right: 6px;
+    }
 }
