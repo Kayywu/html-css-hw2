@@ -254,10 +254,9 @@ body {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
-   /* &__photo {
-        max-width: 260px;
-        max-height: 368px;
-    } */
+    &__photo {
+        width: 100%;
+    } 
     &__name {
         font-family: 'Roboto';
         font-style: normal;
@@ -284,9 +283,11 @@ body {
     background-color: $background-dark-color;
 
     &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        padding-left: 215px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -333,11 +334,14 @@ body {
 .buttons {
 
     &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 94px;
-
+        margin-bottom: 34px;
     }
     &__quote {
         font-family: 'Roboto';
@@ -358,3 +362,43 @@ body {
 
 /* projects */
 
+.portfolio {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 30px;
+        padding: 0;
+    }
+    &__item {
+        border: 1px solid #EEEEEE;
+        max-width: 370px;
+    }
+    &__image {
+        width: 100%;
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: $main-color;
+        margin-top: 20px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: $descriptions-color;
+    }
+}
