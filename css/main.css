@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header__container {
   display: flex;
@@ -88,13 +92,14 @@ body {
 
 /* SLIDER */
 .slider__container {
-  background-color: #2f303a;
+  background: url(./images/background-photo.jpg);
+  border: 1px solid #000000;
+  padding: 200px 0;
   padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .slider__heading {
   font-family: "Roboto";
   font-style: normal;
@@ -106,7 +111,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .slider__button {
   font-family: "Roboto";
   font-style: normal;
@@ -121,6 +125,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 42px;
+  margin-top: 30px;
 }
 
 /* article */
@@ -294,6 +299,9 @@ body {
 }
 
 /* PORTFOLIO */
+.buttons {
+  padding-top: 94px;
+}
 .buttons__container {
   max-width: 1200px;
   width: 100%;
@@ -301,7 +309,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 34px;
 }
 .buttons__quote {
@@ -321,6 +328,9 @@ body {
 }
 
 /* projects */
+.portfolio {
+  padding-bottom: 94px;
+}
 .portfolio__container {
   max-width: 1200px;
   width: 100%;
@@ -339,6 +349,8 @@ body {
   max-width: 370px;
 }
 .portfolio__image {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .portfolio__title {
@@ -349,7 +361,7 @@ body {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 20px;
+  padding: 20px 24px;
 }
 .portfolio__subtitle {
   font-weight: 400;

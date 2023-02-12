@@ -5,6 +5,8 @@
  *::before,
  *::after {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
  }
 
 body {
@@ -14,8 +16,10 @@ body {
 }
 
 .header {
-    background-color: $white-color;
-    border-bottom: 1px solid #ececec;
+        background-color: $white-color;
+        border-bottom: 1px solid #ececec;
+        padding-top: 24px;
+        padding-bottom: 24px;
 
     &__container {
         display: flex;
@@ -100,17 +104,18 @@ body {
 
 /* SLIDER */
 
-
-.slider__container {
-    background-color: $background-dark-color;
+.slider {
+    &__container {
+    background: url(./images/background-photo.jpg);
+    border: 1px solid $black-color;
+    padding: 200px 0;
     padding: 200px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    }
 
-}
-
-.slider__heading {
+    &__heading {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -122,7 +127,7 @@ body {
     color: $white-color;
 }
 
-.slider__button {
+    &__button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -136,6 +141,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 42px;
+    margin-top: 30px;
+}
 }
 
 
@@ -332,6 +339,7 @@ body {
 /* PORTFOLIO */
 
 .buttons {
+        padding-top: 94px;
 
     &__container {
         max-width: 1200px;
@@ -340,7 +348,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 94px;
         margin-bottom: 34px;
     }
     &__quote {
@@ -363,7 +370,7 @@ body {
 /* projects */
 
 .portfolio {
-
+        padding-bottom: 94px;
     &__container {
         max-width: 1200px;
         width: 100%;
@@ -382,6 +389,8 @@ body {
         max-width: 370px;
     }
     &__image {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
     &__title {
@@ -392,7 +401,7 @@ body {
         line-height: 36px;
         letter-spacing: 0.06em;
         color: $main-color;
-        margin-top: 20px;
+        padding: 20px 24px;
     }
     &__subtitle {
         font-weight: 400;
