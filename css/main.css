@@ -162,6 +162,7 @@ body {
 }
 .article__icon {
   background-color: #f5f4fa;
+  padding: 25px 100px;
 }
 .article__title {
   font-family: "Roboto";
@@ -172,6 +173,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-top: 30px;
 }
 .article__text {
   font-family: "Roboto";
@@ -210,6 +212,23 @@ body {
   gap: 30px;
   padding: 0px;
   margin-top: 50px;
+}
+.projects__photo {
+  position: relative;
+}
+.projects__description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 224px;
+  background: rgba(47, 48, 58, 0.8);
+  z-index: 1;
+  padding: 27px 145px;
 }
 
 /* team */
