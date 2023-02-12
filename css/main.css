@@ -89,6 +89,13 @@ body {
 .address__link:hover {
   color: #2196f3;
 }
+.address__icon {
+  fill: #757575;
+  margin-right: 10px;
+}
+.address__icon:hover {
+  fill: #2196f3;
+}
 
 /* SLIDER */
 .slider {
@@ -152,6 +159,9 @@ body {
   list-style: none;
   max-width: 270px;
   width: 100%;
+}
+.article__icon {
+  background-color: #f5f4fa;
 }
 .article__title {
   font-family: "Roboto";
