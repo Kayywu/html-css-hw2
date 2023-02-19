@@ -298,6 +298,7 @@
         </div>
             <div class="footer__second-block">
                 <p class="footer__title">dołącz do nas </p>
+                <div class="footer__list">
                 <div class="footer__icons">
                     <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
@@ -314,9 +315,25 @@
                     <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg></div>
+                </div>
             </div>
             <div class="footer__third-block">
-                <p class="">zapisz się do newslettera</p>
+                <p class="footer__sign-up">zapisz się do newslettera</p>
+                <div class="footer__newsletter">
+                    <form name="signup_form" autocomplete="on" class="footer__form" novalidate>
+                       <div class="footer__label"><label class="footer__input">
+                          Email
+                          <input type="email" name="email" />
+                        </label>
+                       </div>
+                       <div class="footer__submit">
+                        <button type="submit" class="footer__button">Zapisz się</button>
+                        <svg width="20" height="20">
+                            <use href="./images/symbol-defs.svg#SEND"></use>
+                        </svg>
+                       </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
