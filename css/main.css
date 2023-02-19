@@ -67,6 +67,26 @@ body {
 .navigation__link:hover {
   color: #2196f3;
 }
+.navigation__agency::after {
+  content: "";
+  position: absolute;
+  background: #2196f3;
+  border-radius: 2px;
+  width: 53px;
+  height: 4px;
+  top: 76px;
+  left: 333px;
+}
+.navigation__portfolio::after {
+  content: "";
+  position: absolute;
+  background: #2196f3;
+  border-radius: 2px;
+  width: 53px;
+  height: 4px;
+  top: 76px;
+  left: 435px;
+}
 
 .address {
   display: flex;
@@ -213,6 +233,9 @@ body {
   padding: 0px;
   margin-top: 50px;
 }
+.projects__photo {
+  position: relative;
+}
 .projects__description {
   font-weight: 700;
   font-size: 14px;
@@ -223,13 +246,13 @@ body {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   z-index: 1;
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
-  position: relative;
-  bottom: 74px;
+  bottom: 3px;
 }
 
 /* team */
@@ -356,6 +379,7 @@ body {
   cursor: pointer;
 }
 
+/* FOOTER */
 .footer {
   background-color: #2f303a;
 }
@@ -367,6 +391,7 @@ body {
   flex-direction: row;
   padding-top: 60px;
   padding-bottom: 60px;
+  justify-content: space-between;
 }
 .footer__logo {
   font-family: "Raleway";
@@ -457,6 +482,7 @@ body {
 .footer__form {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .footer__input {
   display: flex;
