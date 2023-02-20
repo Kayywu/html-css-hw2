@@ -560,6 +560,7 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
+        outline: none;
         width: 358px;
         height: 50px;
         padding-top: 15px;
@@ -597,6 +598,7 @@ body {
 
     &__icon-send {
         margin-left: 24px;
+        fill: $white-color;
     }
 }
 
@@ -629,6 +631,12 @@ body {
         border-style: none;
         padding: 6px 22px;
         margin-right: 6px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+        &:hover {
+            background-color: $accent-color;
+            color: $white-color;
+        }
     }
 }
 
@@ -653,11 +661,44 @@ body {
         border: 1px solid #EEEEEE;
         max-width: 370px;
     }
+
+    &__card {
+        position: relative;
+        overflow: hidden;
+        &:hover .portfolio__card-overlay {
+            transform: translateY(0);
+        }
+    }
+
+    &__card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms ease;
+    }
+
+
+    &__card-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: $white-color;
+        padding: 49px 45px 49px 24px;
+    }
+
     &__image {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     &__title {
         font-family: 'Roboto';
         font-style: normal;

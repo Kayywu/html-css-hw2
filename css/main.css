@@ -492,6 +492,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
   width: 358px;
   height: 50px;
   padding-top: 15px;
@@ -526,6 +527,7 @@ body {
 }
 .footer__icon-send {
   margin-left: 24px;
+  fill: #ffffff;
 }
 
 /* PORTFOLIO */
@@ -555,6 +557,12 @@ body {
   border-style: none;
   padding: 6px 22px;
   margin-right: 6px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buttons__quote:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 /* projects */
@@ -577,6 +585,33 @@ body {
 .portfolio__item {
   border: 1px solid #EEEEEE;
   max-width: 370px;
+}
+.portfolio__card {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__card:hover .portfolio__card-overlay {
+  transform: translateY(0);
+}
+.portfolio__card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+.portfolio__card-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 49px 45px 49px 24px;
 }
 .portfolio__image {
   display: flex;
