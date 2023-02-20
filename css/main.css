@@ -53,6 +53,7 @@ body {
   display: flex;
   list-style: none;
   gap: 46px;
+  position: relative;
 }
 .navigation__link {
   font-family: "Roboto";
@@ -74,8 +75,8 @@ body {
   border-radius: 2px;
   width: 53px;
   height: 4px;
-  top: 76px;
-  left: 333px;
+  top: 46px;
+  left: 0;
 }
 .navigation__portfolio::after {
   content: "";
@@ -84,8 +85,8 @@ body {
   border-radius: 2px;
   width: 53px;
   height: 4px;
-  top: 76px;
-  left: 435px;
+  top: 46px;
+  left: 100px;
 }
 
 .address {
