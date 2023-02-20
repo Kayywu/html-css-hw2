@@ -189,22 +189,26 @@
                 <p class="footer__sign-up">zapisz się do newslettera</p>
                 <div class="footer__newsletter">
                     <form name="signup_form" autocomplete="on" class="footer__form" novalidate>
-                       <div class="footer__label"><label class="footer__input">
-                          Email
-                          <input type="email" name="email" />
+                       <div class="footer__label">
+                        <label  >
+                          <input type="email" name="email" placeholder="Email" class="footer__input" />
                         </label>
                        </div>
                        <div class="footer__submit">
-                        <button type="submit" class="footer__button">Zapisz się</button>
-                        <svg width="20" height="20">
-                            <use href="./images/symbol-defs.svg#SEND"></use>
-                        </svg>
+                        <button type="submit" class="footer__button">Zapisz się
+                            <svg
+                            class="footer__icon-send"
+                            width="24"
+                            height="24">
+                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                          </svg>
+                        </button>
                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-
+    
 </body>
 </html>
