@@ -748,6 +748,19 @@ body {
 .modal__text-area:focus-within {
   border-color: #2196f3;
 }
+.modal__checkbox {
+  position: relative;
+}
+.modal__policy:checked + .modal__user-policy::before {
+  background-color: #2196f3;
+  border: none;
+  background-image: url(../images/symbol-defs.svg#icon-icon-check);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal__user-policy {
   font-family: "Roboto";
   font-style: normal;
@@ -757,6 +770,15 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.modal__user-policy::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 .modal__links {
   color: #2196f3;
