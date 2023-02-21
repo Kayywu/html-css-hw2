@@ -1,0 +1,50 @@
+
+/* HEADER */
+
+@media screen and (max-width: 767px){
+    .header {
+        display: none;
+        &__container {
+            display: none;
+        }
+    }
+}
+
+
+
+.header {
+    background-color: $white-color;
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+&__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--left {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+    }
+}
+
+&__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration: none;
+
+    &--black {
+        @extend .header__logo;
+        color: $black-color;
+    }
+}
+}

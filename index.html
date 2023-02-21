@@ -402,21 +402,18 @@
             name="user-comment">Wprowadź komentarz </textarea>
         </label>
 
-        <div class="modal__checkbox">
-          <input
-            class="modal__policy visually-hidden"
-            type="checkbox"
-            name="clicker"
-            id="clicker-checkbox"
-            required
-          />
-          <label class="modal__user-policy" for="clicker-checkbox">
+        <label class="modal__checked">
+            <input type="checkbox">
+            <svg
+                width="24"
+                height="24">
+                <use href="./images/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
             <span class="modal__accept"> Oświadczam iz akceptuję
-              <a href="#" class="modal__links"> Regulamin</a> i
-              <a href="#" class="modal__links"> Politykę Prywatności</a>
-            </span>
-          </label>
-        </div>
+                <a href="#" class="modal__links"> Regulamin</a> i
+                <a href="#" class="modal__links"> Politykę Prywatności</a>
+              </span>
+        </label>
         <button class="modal__send-button" type="submit">Wyślij</button>
       </form>
       </div>
