@@ -172,9 +172,8 @@
   .article__list {
     max-width: 768px;
     flex-wrap: wrap;
-    justify-content: unset;
     gap: 30px;
-    padding-left: 70px;
+    justify-content: center;
   }
 }
 .article__item {
@@ -711,6 +710,11 @@ body {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .projects__container {
+    max-width: 768px;
+  }
+}
 .projects__title {
   font-family: "Roboto";
   font-style: normal;
@@ -730,8 +734,20 @@ body {
   padding: 0px;
   margin-top: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .projects__list {
+    flex-direction: column;
+    justify-items: center;
+  }
+}
 .projects__photo {
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .projects__photo {
+    display: flex;
+    justify-content: center;
+  }
 }
 .projects__description {
   font-weight: 700;
@@ -750,6 +766,13 @@ body {
   width: 100%;
   height: 70px;
   bottom: 3px;
+}
+@media screen and (max-width: 1200px) {
+  .projects__description {
+    max-width: 370px;
+    display: flex;
+    bottom: 0;
+  }
 }
 
 /* SLIDER */

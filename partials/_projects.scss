@@ -8,7 +8,10 @@
         margin: 0 auto;
         margin-top: 94px;
         margin-bottom: 94px;
-    }
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+        }
+        }
 
     &__title {
         font-family: 'Roboto';
@@ -29,10 +32,18 @@
         gap: 30px;
         padding: 0px;
         margin-top: 50px;
+        @media screen and (max-width: $table-screen) {
+            flex-direction: column;
+            justify-items: center;
+        }
         }
 
     &__photo {
         position: relative;
+        @media screen and (max-width: $table-screen) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__description {
@@ -52,5 +63,10 @@
         width: 100%;
         height: 70px;
         bottom: 3px;
+        @media screen and (max-width: $table-screen) {
+            max-width: 370px;
+            display: flex;
+            bottom: 0;
+        }
     }
 }
