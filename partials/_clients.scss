@@ -7,6 +7,9 @@
         margin: 0 auto;
         padding-top: 94px;
         padding-bottom: 94px;
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+        }
     }
     &__title {
         font-family: 'Roboto';
@@ -25,6 +28,12 @@
         justify-content: center;
         list-style: none;
         gap: 30px;
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
     }
 
     &__image {
@@ -38,6 +47,10 @@
         &:hover {
         fill: $accent-color;
         cursor: pointer;
+        }
+        @media screen and (max-width: $table-screen) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

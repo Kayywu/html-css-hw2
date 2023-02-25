@@ -7,10 +7,22 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__top-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .footer__logo {
   font-family: "Raleway";
@@ -25,6 +37,12 @@
 .footer__logo--white {
   color: #ffffff;
 }
+@media screen and (max-width: 1200px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer__adress {
   display: flex;
   flex-direction: column;
@@ -35,6 +53,11 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__adress {
+    text-align: center;
+  }
 }
 .footer__place {
   color: #ffffff;
@@ -82,10 +105,12 @@
   background-color: #2196f3;
   cursor: pointer;
 }
-.footer__third-block {
-  display: flex;
-  flex-direction: column;
-  margin-left: 78px;
+@media screen and (max-width: 1200px) {
+  .footer__bottom-block {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer__sign-up {
   font-family: "Roboto";
@@ -98,10 +123,22 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .footer__sign-up {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer__form {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer__form {
+    flex-direction: column;
+  }
 }
 .footer__input {
   display: flex;
@@ -126,6 +163,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__submit {
+    margin-top: 20px;
+  }
 }
 .footer__button {
   font-family: "Roboto";
@@ -234,6 +276,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .clients__container {
+    max-width: 768px;
+  }
+}
 .clients__title {
   font-family: "Roboto";
   font-style: normal;
@@ -251,6 +298,14 @@ body {
   list-style: none;
   gap: 30px;
 }
+@media screen and (max-width: 1200px) {
+  .clients__list {
+    max-width: 768px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 .clients__image {
   fill: #AFB1B8;
   padding: 16px 32px;
@@ -263,6 +318,12 @@ body {
 .clients__image:hover {
   fill: #2196f3;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .clients__image {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* HEADER */

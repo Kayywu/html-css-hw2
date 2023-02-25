@@ -8,11 +8,24 @@
         width: 100%;
         margin: 0 auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 60px;
         padding-bottom: 60px;
         justify-content: space-between;
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+        }
+
     }
+
+    &__top-block {
+        @media screen and (max-width: $table-screen) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    }
+
 
     &__logo {
         font-family: 'Raleway';
@@ -26,6 +39,10 @@
         &--white {
             color: $white-color;
         }
+        @media screen and (max-width: $table-screen) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__adress {
@@ -38,6 +55,9 @@
         line-height: 24px;
         letter-spacing: 0.03em;
         margin-top: 20px;
+        @media screen and (max-width: $table-screen) {
+            text-align: center;
+        }
     }
 
     &__place {
@@ -94,10 +114,16 @@
         }
     }
 
+    &__bottom-block {
+        @media screen and (max-width: $table-screen) {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__third-block {
-        display: flex;
-        flex-direction: column;
-        margin-left: 78px;
+        
     }
 
     &__sign-up {
@@ -110,15 +136,24 @@
         text-transform: uppercase;
         color: $white-color;
         margin-bottom: 20px;
+        @media screen and (max-width: $table-screen) {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__newsletter {
-    }
+       
+        }
 
     &__form {
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media screen and (max-width: $table-screen) {
+            flex-direction: column;
+        }
 
     }
 
@@ -146,6 +181,12 @@
             line-height: 20px;
         }
 
+    }
+
+    &__submit {
+        @media screen and (max-width: $table-screen) {
+            margin-top: 20px;
+        }
     }
 
     &__button {
