@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Studio</title>
         <link
         rel="stylesheet"
@@ -132,10 +133,30 @@
             <h2 class="team__title">Nasz Zespół</h2>
             <ul class="team__list">
                 <li class="team__member">
-                    <img
-                    class="team__photo"
-                    src="./images/product-designer.jpg"
-                    alt="JohnProductDesigner" >
+                    <picture>
+                        <source
+                            srcset="images/product-designer.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/product-designer@2x.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/product-designer-tablet.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="images/product-designer-tablet@2x.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="product-designer-mobile.jpg"
+                            media="(max-width: 767px)"/>
+                        <source
+                            srcset="product-designer-mobile@2x.jpg"
+                            media="(max-width: 767px)"/>
+                        <img
+                        class="team__photo"
+                        src="./images/product-designer.jpg"
+                        alt="JohnProductDesigner" />
+                    </picture>
                     <div class="team__content">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__job">Product Designer</p>
@@ -160,10 +181,30 @@
                     </div>
                 </li>
                 <li class="team__member">
-                    <img
-                    class="team__photo"
-                    src="./images/front-end.jpg"
-                    alt="JohnFrontEnd">
+                    <picture>
+                            <source
+                            srcset="images/frontend-dev.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/frontend-dev@2x.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/frontend-tablet.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="images/frontend-dev-tablet@2x.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="frontend-dev-mobile.jpg"
+                            media="(max-width: 767px)"/>
+                        <source
+                            srcset="frontend-dev-mobile@2x.jpg"
+                            media="(max-width: 767px)"/>
+                        <img
+                        class="team__photo"
+                        src="./images/front-end.jpg"
+                        alt="JohnFrontEnd">
+                    </picture>
                     <div class="team__content">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__job">Frontend Developer</p>
@@ -188,10 +229,30 @@
                     </div>
                 </li>
                 <li class="team__member">
-                    <img
-                    class="team__photo"
-                    src="./images/marketing1.jpg"
-                    alt="JohnMarketing">
+                    <picture>
+                        <source
+                            srcset="images/marketing.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/marketing@2x.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="images/marketing-tablet.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="images/marketing-tablet@2x.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="images/marketing-mobile.jpg"
+                            media="(max-width: 767px)"/>
+                        <source
+                            srcset="images/marketing-mobile@2x.jpg"
+                            media="(max-width: 767px)"/>
+                        <img
+                        class="team__photo"
+                        src="./images/marketing1.jpg"
+                        alt="JohnMarketing">
+                    </picture>
                     <div class="team__content">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__job">Marketing</p>
@@ -216,10 +277,30 @@
                     </div>
                 </li>
                 <li class="team__member">
-                    <img
-                    class="team__photo"
-                    src="./images/ui-designer.jpg"
-                    alt="UIDesigner" >
+                    <picture>
+                            <source
+                            srcset="ui-designer.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="ui-designer@2x.jpg"
+                            media="(min-width: 1200px)"/>
+                        <source
+                            srcset="ui-designer-tablet.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="ui-designer-tablet@2x.jpg"
+                            media="(min-width: 768px)"/>
+                        <source
+                            srcset="ui-designer-mobile.jpg"
+                            media="(max-width: 767px)"/>
+                        <source
+                            srcset="ui-designer-mobile@2x.jpg"
+                            media="(max-width: 767px)"/>   
+                        <img
+                        class="team__photo"
+                        src="./images/ui-designer.jpg"
+                        alt="UIDesigner" >
+                    </picture>
                     <div class="team__content">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__job">UI Designer</p>
@@ -421,6 +502,13 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     </body>
 </html>

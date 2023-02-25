@@ -3,10 +3,14 @@
 .article {
 
     &__container {
+        display: flex;
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
         margin-top: 94px;
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+        }
     }
 
     &__list {
@@ -14,12 +18,22 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0px;
+        @media screen and (max-width: $table-screen) {
+            max-width: 768px;
+            flex-wrap: wrap;
+            justify-content: unset;
+            gap: 30px;
+            padding-left: 70px;
+        }
     }
 
     &__item {
        list-style: none;
        max-width: 270px;
        width: 100%;
+       @media screen and (max-width: $table-screen) {
+        width: 50%;
+       }
     }
 
     &__icon {
