@@ -8,6 +8,7 @@
         width: 100%;
         margin: 0 auto;
         margin-top: 94px;
+        justify-content: center;
         @media screen and (max-width: $table-screen) {
             max-width: 768px;
         }
@@ -18,6 +19,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0px;
+        gap: 30px;
         @media screen and (max-width: $table-screen) {
             max-width: 768px;
             flex-wrap: wrap;
