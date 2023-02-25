@@ -8,6 +8,10 @@
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        @media screen and (max-width: $table-screen){
+            max-width: 768px;
+            padding: 60px 15px;
+        }
 
     }
     &__title {
@@ -27,12 +31,22 @@
         gap: 30px;
         padding: 0;
         margin-top: 50px;
+        @media screen and (max-width: $table-screen){
+            max-width: 768px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
     }
+
     &__member {
         flex: 1;
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        @media screen and (max-width: $table-screen) {
+            width: 50%;
+        }
     }
     &__photo {
         width: 100%;
