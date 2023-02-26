@@ -10,7 +10,10 @@
         margin-top: 94px;
         justify-content: center;
         @media screen and (max-width: $table-screen) {
-            max-width: 768px;
+            max-width: 100%;
+        }
+        @media screen and (max-width: $mobile-screen) {
+            max-width: 100%;
         }
     }
 
@@ -32,9 +35,6 @@
        list-style: none;
        max-width: 270px;
        width: 100%;
-       @media screen and (max-width: $table-screen) {
-        width: 50%;
-       }
     }
 
     &__icon {
