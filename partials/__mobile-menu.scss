@@ -82,6 +82,13 @@
         letter-spacing: 0.02em;
         list-style: none;
         color: $black-color;
+        &:focus {
+            color: $accent-color;
+        }
+        &--blue {
+            @extend .mobile-menu__link;
+            color: $accent-color;
+        }
     }
 
     &__contacts {
