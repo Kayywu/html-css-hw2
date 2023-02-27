@@ -1070,12 +1070,12 @@ body {
   flex-direction: column;
   align-content: space-between;
 }
-.mobile-menu__nav-list {
-  margin-bottom: 80px;
+.mobile-menu__nav {
+  margin-bottom: 300px;
 }
 .mobile-menu__nav-item {
   list-style: none;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 .mobile-menu__nav-item:hover {
   color: #2196f3;
@@ -1093,6 +1093,7 @@ body {
   display: flex;
   list-style: none;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 .mobile-menu__contacts-list {
   list-style: none;
@@ -1111,6 +1112,8 @@ body {
   text-decoration: none;
 }
 .mobile-menu__contacts-email {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
