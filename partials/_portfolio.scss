@@ -13,11 +13,9 @@
     margin-bottom: 34px;
 }
 &__quote {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: $black-color;
@@ -31,6 +29,7 @@
     &:hover {
         background-color: $accent-color;
         color: $white-color;
+        cursor: pointer;
     }
 }
 }
@@ -77,11 +76,9 @@
 
 
 &__card-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
     letter-spacing: 0.03em;
     color: $white-color;
     padding: 49px 45px 49px 24px;
@@ -94,11 +91,9 @@
 }
 
 &__title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: $main-color;
     padding: 20px 24px;
@@ -106,7 +101,7 @@
 &__subtitle {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: $descriptions-color;
 

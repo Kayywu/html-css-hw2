@@ -16,11 +16,9 @@
 
     &__link {
         position: relative;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         color: $main-color;
         text-decoration: none;
@@ -52,7 +50,7 @@
         width: 53px;
         height: 4px;
         top: 46px;
-        left: 100px;
+        left: 0;
     }
 }
 
@@ -75,16 +73,17 @@
     }
 
     &__link {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         color: $descriptions-color;
         text-decoration: none;
         &:hover {
             color: $accent-color;
+            &__icon {
+                fill: $accent-color;
+            }
         }
     }
 
@@ -94,5 +93,5 @@
         &:hover {
             fill: $accent-color;
         }
-        }
+    }
 }
