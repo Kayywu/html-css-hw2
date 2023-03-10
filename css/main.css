@@ -39,6 +39,14 @@
     flex-direction: column;
   }
 }
+.footer__first-block {
+  margin-right: 70px;
+}
+@media screen and (max-width: 600px) {
+  .footer__first-block {
+    margin: 0;
+  }
+}
 .footer__logo {
   font-weight: 700;
   font-size: 26px;
@@ -161,6 +169,22 @@
     flex-direction: column;
   }
 }
+.footer__label {
+  max-width: 358px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .footer__label {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__label {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .footer__input {
   display: flex;
   align-items: center;
@@ -171,6 +195,7 @@
   border-radius: 4px;
   outline: none;
   width: 100%;
+  max-width: 358px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -184,6 +209,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__input {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__input {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .footer__submit {
@@ -966,6 +1001,9 @@ body {
 }
 .team__photo {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .team__name {
   font-family: "Roboto";
