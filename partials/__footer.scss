@@ -137,16 +137,22 @@
     }
 
     &__bottom-block {
-
+            width: 100%;
+            max-width: 570px;
         @media screen and (max-width: $table-screen) {
             margin-top: 60px;
             display: flex;
             flex-direction: column;
         }
+        @media screen and (max-width: $mobile-screen) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
     }
 
     &__third-block {
-        
+       
     }
 
     &__sign-up {
@@ -225,6 +231,7 @@
     }
 
     &__submit {
+        margin-left: 40px;
         @media screen and (max-width: $table-screen) {
             margin-top: 20px;
         }
@@ -245,6 +252,7 @@
         border-color: none;
         border-style: none;
         padding: 10px 28px 10px 42px;
+        white-space: nowrap;
     }
 
     &__icon-send {
