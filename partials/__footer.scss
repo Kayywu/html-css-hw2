@@ -16,6 +16,9 @@
             max-width: 768px;
             flex-direction: column;
         }
+        @media screen and (max-width: $mobile-screen) {
+            max-width: 100%;
+        }
 
     }
 
@@ -23,10 +26,13 @@
         display: flex;
         flex-direction: row;
         @media screen and (max-width: $table-screen) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @media screen and (max-width: $mobile-screen) {
+            flex-direction: column;
+        }
     }
 
 
@@ -76,7 +82,7 @@
     &__second-block {
         display: flex;
         flex-direction: column; 
-        margin-left: 70px;  
+        justify-content: center;
     }
 
     &__title {
@@ -87,12 +93,20 @@
         text-transform: uppercase;
         color: $white-color;
         padding-bottom: 20px;
+        @media screen and (max-width: $mobile-screen) {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: row;
         gap: 10px;
+        @media screen and (max-width: $mobile-screen) {
+            justify-content: center;
+        }
     }
 
     &__icons {

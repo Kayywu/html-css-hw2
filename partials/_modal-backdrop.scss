@@ -126,9 +126,6 @@
             border-color: $accent-color;
             fill: $accent-color;
         }
-        &:focus-within {
-            fill: $accent-color;
-        }
     }
 
     &__comment {
