@@ -475,6 +475,10 @@ body {
 }
 .modal__input:hover {
   border-color: #2196f3;
+  fill: #2196f3;
+}
+.modal__input:focus-within {
+  fill: #2196f3;
 }
 .modal__comment {
   font-weight: 400;
