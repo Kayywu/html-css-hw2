@@ -1223,6 +1223,7 @@ img {
 .mobile-menu__socials-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
 }
 .mobile-menu__socials-item {
