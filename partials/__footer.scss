@@ -238,6 +238,9 @@
         @media screen and (max-width: $table-screen) {
             margin-top: 20px;
         }
+        @media screen and (max-width: $mobile-screen) {
+            margin: 0;
+        }
     }
 
     &__button {

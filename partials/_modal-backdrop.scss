@@ -41,6 +41,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier 0.4, 0, 0.2, 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: $mobile-screen) {
+        max-width: 100%;
+    }
 
     &__close-btn {
         position: absolute;
@@ -65,6 +71,14 @@
         display: flex;
         flex-direction: column;
         padding: 40px;
+        @media screen and (max-width: $table-screen){
+            max-width: 100%;
+            padding: 40px;
+        }
+        @media screen and (max-width: $mobile-screen) {
+            max-width: 100%;
+            padding: 10px;
+    }
     }
 
     &__title {
@@ -124,6 +138,8 @@
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover {
             border-color: $accent-color;
+        }
+        &:hover + .modal__icon {
             fill: $accent-color;
         }
     }
@@ -219,6 +235,9 @@
         color: $white-color;
         cursor: pointer;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 20px;
+        @media screen and (max-width: $mobile-screen) {
+            margin-top: 8px;
+        }
     }
 }

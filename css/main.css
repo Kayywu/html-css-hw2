@@ -241,6 +241,11 @@
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 600px) {
+  .footer__submit {
+    margin: 0;
+  }
+}
 .footer__button {
   font-weight: 700;
   font-size: 16px;
@@ -340,6 +345,10 @@ body {
   font-family: "Roboto";
   margin-right: auto;
   margin-left: auto;
+}
+
+img {
+  width: 100%;
 }
 
 /* CLIENTS */
@@ -477,6 +486,14 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier 0.4, 0, 0.2, 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .modal {
+    max-width: 100%;
+  }
 }
 .modal__close-btn {
   position: absolute;
@@ -500,6 +517,18 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .modal__section {
+    max-width: 100%;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal__section {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
 .modal__title {
   font-weight: 700;
@@ -553,6 +582,8 @@ body {
 }
 .modal__input:hover {
   border-color: #2196f3;
+}
+.modal__input:hover + .modal__icon {
   fill: #2196f3;
 }
 .modal__comment {
@@ -636,7 +667,12 @@ body {
   color: #ffffff;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .modal__send-button {
+    margin-top: 8px;
+  }
 }
 
 /* NAVIGATION */
