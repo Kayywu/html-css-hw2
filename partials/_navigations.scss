@@ -79,19 +79,20 @@
         letter-spacing: 0.03em;
         color: $descriptions-color;
         text-decoration: none;
-        &:hover {
-            color: $accent-color;
-            &__icon {
+            &:hover {
+                color: $accent-color;
+                }
+            &:hover svg {
                 fill: $accent-color;
             }
-        }
     }
+    
 
     &__icon {
         fill: $descriptions-color;
         margin-right: 10px;
-        &:hover {
-            fill: $accent-color;
-        }
+            &:hover {
+                fill: $accent-color;
+            }
     }
 }

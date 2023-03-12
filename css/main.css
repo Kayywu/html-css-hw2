@@ -724,7 +724,7 @@ body {
 .address__link:hover {
   color: #2196f3;
 }
-.address__link:hover__icon {
+.address__link:hover svg {
   fill: #2196f3;
 }
 .address__icon {
