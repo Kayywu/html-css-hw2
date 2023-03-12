@@ -337,10 +337,6 @@
   padding: 0;
 }
 
-* {
-  border: 1px solid red;
-}
-
 body {
   font-family: "Roboto";
   margin-right: auto;
