@@ -9,12 +9,15 @@
         margin: 0 auto;
         display: flex;
         flex-direction: row;
+        align-items: center;
         padding-top: 60px;
         padding-bottom: 60px;
         justify-content: space-between;
         @media screen and (max-width: $table-screen) {
             max-width: 768px;
             flex-direction: column;
+            display: flex;
+            align-items: center;
         }
         @media screen and (max-width: $mobile-screen) {
             max-width: 100%;
