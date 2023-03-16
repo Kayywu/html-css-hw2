@@ -231,6 +231,7 @@
 @media screen and (max-width: 600px) {
   .footer__input {
     max-width: 100%;
+    margin-bottom: 20px;
   }
 }
 .footer__submit {
@@ -868,6 +869,16 @@ img {
 }
 
 /* PROJECTS */
+@media screen and (max-width: 600px) {
+  .projects {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .projects {
+    display: none;
+  }
+}
 .projects__container {
   max-width: 1200px;
   width: 100%;
@@ -974,6 +985,7 @@ img {
 @media screen and (max-width: 600px) {
   .slider__heading {
     font-size: 26px;
+    line-height: 42px;
   }
 }
 .slider__button {

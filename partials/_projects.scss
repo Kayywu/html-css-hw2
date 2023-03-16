@@ -1,7 +1,12 @@
 /* PROJECTS */
 
 .projects {
-
+    @media screen and (max-width: $mobile-screen) {
+        display: none;
+    }
+    @media screen and (max-width: $table-screen) {
+        display: none;
+    }
     &__container {
         max-width: 1200px;
         width: 100%;
